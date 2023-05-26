@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Power Grotesk";
+        src:  url(../fonts/PowerGrotesk-Regular.ttf) format(truetype);
+    }@font-face {
+        font-family: "Power Grotesk Black";
+        src:  url(../fonts/PowerGrotesk-Black.ttf) format(truetype);
+    }
+
+    @font-face {
+        font-family: "Editorial old";
+        src: url(../fonts/ppeditorialold-regular.otf) format(opentype);
+    }
+    @font-face {
+        font-family: "Editorial old italic";
+        src: url(../fonts/ppeditorialold-italic.otf) format(opentype);
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+@layer components {
+    .navbar {
+        @apply bg-black p-5 text-white m-5 rounded-full flex justify-between items-center 
+    }
+
+    .hamburger {
+        @apply block cursor-pointer transition duration-300 md:hidden
+    }
+
+    .bar {
+        @apply block w-[25px] h-[3px] my-2 mx-auto bg-primary-accent
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        height: 90vh;
+    }
+    .nav-menu{
+        @apply space-y-10 py-10
+      
+    }
+    
+    .nav-menu.active{
+        right: 0;
+    }
+    .nav-menu .nav-link{
+        @apply text-white text-6xl
+    }
+    .hamburger.active .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 9px);
+        transform: rotate(-45deg) translate(-9px, 9px);
+        transition: 0.4s;
+      }
+      
+      .hamburger.active .bar2 {
+        opacity: 0;
+        transition: 0.4s;
+      }
+      
+      .hamburger.active .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
+        transition: 0.4s;
+      }
+      .scroll-text{
+        @apply uppercase text-8xl whitespace-nowrap font-sans-black text-[#1A154C] mt-20
+      }
+      .scroll-text {
+        /* animation properties */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        
+        -moz-animation: my-animation 15s linear infinite;
+        -webkit-animation: my-animation 15s linear infinite;
+        animation: my-animation 15s linear infinite;
+      }
+      
+    
+      
+      @keyframes my-animation {
+        from {
+          -moz-transform: translateX(0%);
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+        }
+        to {
+          -moz-transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+    }
+    .heading-text{
+        @apply text-white text-4xl
+    }
+    .heading-text span{
+     @apply font-serif-italic
+    }
+    .btn-primary{
+        @apply bg-primary-accent rounded-full py-2 px-10 text-black uppercase 
+    }
+
+}
+@media (min-width: 768px) {
+    .nav-menu{
+        position: static;
+        display: flex;
+       height: auto;
+       justify-content: flex-end;
+       flex-direction: row;
+       align-items: center;
+    }
+    .nav-menu{
+        @apply space-y-0 py-0 space-x-10 ml-auto
+    }
+    .nav-menu .nav-link{
+        @apply text-base
+    }
+    .btn-pill{
+        @apply bg-primary-accent !text-black py-2 px-5 rounded-full
+    }
+}
