@@ -1,0 +1,31 @@
+[
+    {
+        "name": "ABC",
+        "img": "logo-abc.svg"
+    },
+    {
+        "name": "Buzzfeed",
+        "img": "logo-buzzfeed.svg"
+    },
+    {
+        "name": "DJI",
+        "img": "logo-dji.svg"
+    },
+    {
+        "name": "Forbes",
+        "img": "logo-forbes.svg"
+    },
+    {
+        "name": "Fox News",
+        "img": "logo-fox-news.svg"
+    },
+    {
+        "name": "IMDB",
+        "img": "logo-imdb.svg"
+    },
+    {
+        "name": "Techcrunch",
+        "img": "logo-techcrunch.svg"
+    }
+    
+]
