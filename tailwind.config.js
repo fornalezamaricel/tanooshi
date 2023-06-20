@@ -9,9 +9,10 @@ module.exports = {
       'primary-color': '#5546FB',
       'primary-accent': '#BEFF34',
       'secondary-pink': '#FF7BCA',
-      'secondary-purple': '# 1A154C',
+      'secondary-purple': '#1A154C',
       'black': '#000',
-      'white': '#fff'
+      'white': '#fff',
+      'light-purple': "#d4a1fe"
     },
       fontFamily:{
         sans: ['Power Grotesk','san-serif' ],

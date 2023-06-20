@@ -1,0 +1,20 @@
+[
+    {
+        "title":"Another set",
+        "img": "works-another-set.png",
+        "role": "Web Development",
+        "year": "2022"
+    },
+    {
+        "title":"Monochrome",
+        "img": "works-monochrome.png",
+        "role": "Web Development",
+        "year": "2022"
+    },
+    {
+        "title":"Mockup",
+        "img": "works-mockup.png",
+        "role": "Web Development",
+        "year": "2022"
+    }
+]

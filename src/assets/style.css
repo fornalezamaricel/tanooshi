@@ -241,7 +241,98 @@
     @apply text-xl font-light mt-10;
   }
   .secondary-button {
-    @apply border-4 my-10  px-10 py-5 rounded-full uppercase font-bold text-xl hover:bg-primary-color;
+    @apply border-4 my-10  px-10 py-5 rounded-full uppercase font-bold text-xl hover:bg-primary-color 2xl:text-4xl;
+  }
+  .works {
+    @apply lg:px-10 pt-10 grid grid-cols-1 gap-10;
+  }
+  .works-heading {
+    @apply text-7xl text-center 2xl:text-9xl;
+  }
+
+  .work-img {
+    @apply w-full rounded-3xl border-2 h-[500px] object-cover xl:h-[700px] 2xl:h-[800px];
+  }
+  .work-container .description {
+    @apply px-3 py-5 md:flex md:justify-between  md:items-baseline 2xl:py-10;
+  }
+  .text-btn {
+    @apply text-5xl font-serif-italic text-center 2xl:text-8xl;
+  }
+  .painpoints-heading {
+    @apply text-5xl md:text-7xl 2xl:text-9xl 2xl:px-10 px-2;
+  }
+  .painpoints-img {
+    @apply grayscale rounded-3xl my-10;
+  }
+  .painpoints-caption {
+    @apply uppercase text-xl text-center px-5 md:w-3/4 md:mx-auto md:text-3xl pb-20 xl:w-1/2 2xl:text-5xl 2xl:w-7/12;
+  }
+  .painpoints-splide {
+    @apply 2xl:py-10;
+  }
+  .painpoints-caption .highlight {
+    @apply lowercase rounded-full font-serif-italic bg-black p-1;
+  }
+  .solution-heading {
+    @apply text-3xl px-10 py-10 text-center md:text-7xl md:px-20 md:text-left lg:pt-20 xl:text-8xl 2xl:text-9xl;
+  }
+  .solution-img {
+    @apply px-2 mb-5 rounded-3xl md:px-20;
+  }
+  .solution-description {
+    @apply px-5 md:px-40 md:pt-10;
+  }
+  .solution-description .title {
+    @apply uppercase mb-10 text-sm md:text-2xl md:mb-20 lg:pl-40 2xl:text-4xl;
+  }
+  .solution-description .round {
+    @apply px-4 py-1 rounded-full border-2 w-fit mb-5 md:px-9 md:py-3 md:ml-40 md:mb-10 lg:ml-96 2xl:ml-[32rem];
+  }
+  .solution-description .list {
+    @apply uppercase md:ml-40 text-xl  lg:ml-96 xl:text-3xl 2xl:ml-[32rem];
+  }
+  .brands {
+    @apply bg-black text-white py-20;
+  }
+  .brands-title {
+    @apply italic text-6xl text-center uppercase lg:text-7xl xl:text-8xl 2xl:text-9xl;
+  }
+  .brands-title-highlight {
+    @apply text-light-purple font-serif-italic text-6xl text-center lowercase lg:text-7xl xl:text-8xl 2xl:text-9xl;
+  }
+  .brands-splide .logo {
+    @apply py-4 px-6 rounded-full border-2 w-fit text-2xl text-center md:text-4xl md:px-8 xl:text-5xl 2xl:text-6xl 2xl:px-10;
+  }
+  .brands-logo {
+    @apply my-10 lg:my-20;
+  }
+  .logo-slide {
+    @apply flex justify-center text-center;
+  }
+  .match-container {
+    @apply text-black bg-white rounded-3xl px-5 py-20;
+  }
+  .match-container .title {
+    @apply text-5xl text-center px-5 md:w-1/2 md:mx-auto lg:text-6xl 2xl:w-1/3 2xl:text-7xl;
+  }
+  .match-container .subtitle {
+    @apply uppercase text-center mt-6 mb-10 lg:text-2xl;
+  }
+  .match-container .list-container {
+    @apply p-10 border-4 rounded-3xl border-light-purple border-dashed md:w-1/2 md:mx-auto 2xl:w-1/3;
+  }
+  .match-container .list-container .text {
+    @apply py-3 leading-none lg:text-lg 2xl:text-2xl;
+  }
+  .contacts {
+    @apply px-8 py-10 md:flex md:px-20 md:pt-20 lg:text-xl xl:pt-40 xl:pl-40 xl:pb-20 xl:text-2xl 2xl:text-4xl;
+  }
+  .arrow {
+    @apply mt-10 md:mt-0 ml-auto p-2 border-4 w-fit rounded-xl;
+  }
+  .social-media {
+    @apply flex justify-around text-white pb-5 lg:text-xl 2xl:text-4xl;
   }
 }
 @media (min-width: 768px) {
