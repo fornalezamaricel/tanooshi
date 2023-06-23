@@ -9,7 +9,9 @@
                     <SplideTrack>
                         <SplideSlide>
                             <div class=" static">
-                                <img class="painpoints-img " src="../assets/img/nope.png" alt="Limited Resources">
+                                <img class="painpoints-img " src="../assets/gif/nope.gif" alt="Limited Resources">
+
+
                                 <div class="absolute bottom-10 p-10">
                                     <p class="painpoints-title "><span class="uppercase">Waste Time and money</span>
                                         <br>
@@ -20,7 +22,7 @@
                         </SplideSlide>
                         <SplideSlide>
                             <div class=" static">
-                                <img class="painpoints-img " src="../assets/img/nope.png" alt="Limited Resources">
+                                <img class="painpoints-img " src="../assets/gif/no-way.gif" alt="Limited Resources">
                                 <div class="absolute bottom-10 p-10">
                                     <p class="painpoints-title "><span class="uppercase">Worry about the cost of</span>
                                         <br>
@@ -31,7 +33,7 @@
                         </SplideSlide>
                         <SplideSlide>
                             <div class=" static">
-                                <img class="painpoints-img " src="../assets/img/nope.png" alt="Limited Resources">
+                                <img class="painpoints-img " src="../assets/gif/no.gif" alt="Limited Resources">
                                 <div class="absolute bottom-10 p-10">
                                     <p class="painpoints-title "><span class="uppercase">Spend time on</span>
                                         <br>
@@ -42,7 +44,7 @@
                         </SplideSlide>
                         <SplideSlide>
                             <div class=" static">
-                                <img class="painpoints-img " src="../assets/img/nope.png" alt="Limited Resources">
+                                <img class="painpoints-img " src="../assets/gif/do-not-want.gif" alt="Limited Resources">
                                 <div class="absolute bottom-10 p-10">
                                     <p class="painpoints-title "><span class="uppercase">Struggle to</span>
                                         <br>
@@ -53,7 +55,7 @@
                         </SplideSlide>
                         <SplideSlide>
                             <div class=" static">
-                                <img class="painpoints-img " src="../assets/img/nope.png" alt="Limited Resources">
+                                <img class="painpoints-img " src="../assets/gif/never.gif" alt="Limited Resources">
                                 <div class="absolute bottom-10 p-10">
                                     <p class="painpoints-title "><span class="uppercase">Deal with</span>
                                         <br>
@@ -99,7 +101,11 @@ export default {
                 },
                 912: {
                     perPage: 2
+                },
+                1536: {
+
                 }
+
 
             },
 

@@ -263,10 +263,13 @@
     @apply text-5xl md:text-7xl 2xl:text-9xl 2xl:px-10 px-2;
   }
   .painpoints-img {
-    @apply grayscale rounded-3xl my-10;
+    @apply grayscale rounded-3xl my-10 object-cover h-[400px] 2xl:w-full;
   }
   .painpoints-caption {
     @apply uppercase text-xl text-center px-5 md:w-3/4 md:mx-auto md:text-3xl pb-20 xl:w-1/2 2xl:text-5xl 2xl:w-7/12;
+  }
+  .painpoints-title {
+    @apply md:text-xl lg:text-base xl:text-lg 2xl:text-xl;
   }
   .painpoints-splide {
     @apply 2xl:py-10;
