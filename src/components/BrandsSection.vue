@@ -14,6 +14,21 @@
                             <SplideSlide class="logo-slide">
                                 <div class="logo">remrise</div>
                             </SplideSlide>
+                            <SplideSlide class="logo-slide">
+                                <div class="logo">Fierce Athletica</div>
+                            </SplideSlide>
+                            <SplideSlide class="logo-slide">
+                                <div class="logo">Visualisthink</div>
+                            </SplideSlide>
+                            <SplideSlide class="logo-slide">
+                                <div class="logo">Cinema Captures</div>
+                            </SplideSlide>
+                            <SplideSlide class="logo-slide">
+                                <div class="logo">Caillio Digitals</div>
+                            </SplideSlide>
+                            <SplideSlide class="logo-slide">
+                                <div class="logo">The Summit Virtual</div>
+                            </SplideSlide>
                         </SplideTrack>
                     </div>
                 </Splide>
@@ -35,23 +50,12 @@ export default {
 
         const options = {
             type: 'loop',
-            gap: '0rem',
+            gap: '1rem',
             autoplay: true,
             arrows: false,
-            width: 'fit-content',
-            perPage: 3,
-            mediaQuery: 'min',
-            breakpoints: {
-                820: {
-                    perPage: 4
-                },
-                1024: {
-                    perPage: 5
-                },
+            autoWidth: true,
+            focus: 'center',
 
-
-
-            },
 
             pagination: false
         };

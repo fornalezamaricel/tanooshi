@@ -1,8 +1,41 @@
 [
     {
         "star": 5,
-        "title": "Great team.",
-        "testimonial": "They really know what they are doing. I highlyrecommend them like super.",
-        "company": "remrise"
+        "title": "No fuss, no stress. ",
+        "testimonial": "I had this website that needed a serious makeover. These guys nailed it! Communication was smooth as butter. No fuss, no stress. ",
+        "company": "Michaela R."
+    },
+    
+    {
+        "star": 5,
+        "title": "First time hiring, and bam!",
+        "testimonial": "It’s my first time to hire and I’m impressed.",
+        "company": "Lauren S. "
+    },
+    
+    {
+        "star": 5,
+        "title": "Rosh is a rockstar!",
+        "testimonial": "Rosh is a rockstar! Seriously, their communication skills are off the charts.",
+        "company": "Debbie"
+    },
+    {
+        "star": 5,
+        "title": "The world deserves to know your talents. ",
+        "testimonial": "Our brand got a major glow-up, and the results were off the charts! Our engagement skyrocketed after the brand revamp! Highly recommended. ",
+        "company": "Jedy C."
+    },
+    {
+        "star": 5,
+        "title": "It was a total game-changer.",
+        "testimonial": "We just got hit with a ton of leads and it was nothing like we expected! It was a total game-changer.",
+        "company": "Jane C. "
+    },
+   
+    {
+        "star": 5,
+        "title": "They nailed it. ",
+        "testimonial": "These folks know how to bring the A-game when it comes to websites. I wanted that high-end feel, and they nailed it. ",
+        "company": "Ivan Y. "
     }
 ]

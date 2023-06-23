@@ -97,7 +97,8 @@
                 </div>
                 <div class="overflow-hidden">
                     <div class="scrolling-text">
-                        Insanely pretty websites that works
+                        Insanely pretty websites that works. Insanely pretty websites that works. Insanely pretty websites
+                        that works
                     </div>
                 </div>
 

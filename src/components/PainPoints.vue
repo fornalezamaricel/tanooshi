@@ -1,6 +1,6 @@
 <template>
-    <div class="light-purple text-white px-3 pt-10 md:px-10">
-        <p class="painpoints-heading">Your time as an agency owner is <span
+    <div class="light-purple text-white pt-10 ">
+        <p class="painpoints-heading px-5 md:px-10">Your time as an agency owner is <span
                 class="font-serif-italic text-primary-color">priceless</span> and you don't want to:</p>
 
         <div class="painpoints-splide">
@@ -18,7 +18,52 @@
                                 </div>
                             </div>
                         </SplideSlide>
+                        <SplideSlide>
+                            <div class=" static">
+                                <img class="painpoints-img " src="../assets/img/nope.png" alt="Limited Resources">
+                                <div class="absolute bottom-10 p-10">
+                                    <p class="painpoints-title "><span class="uppercase">Worry about the cost of</span>
+                                        <br>
+                                        <span class="font-serif-italic">in-house developers</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div class=" static">
+                                <img class="painpoints-img " src="../assets/img/nope.png" alt="Limited Resources">
+                                <div class="absolute bottom-10 p-10">
+                                    <p class="painpoints-title "><span class="uppercase">Spend time on</span>
+                                        <br>
+                                        <span class="font-serif-italic">training newbies</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div class=" static">
+                                <img class="painpoints-img " src="../assets/img/nope.png" alt="Limited Resources">
+                                <div class="absolute bottom-10 p-10">
+                                    <p class="painpoints-title "><span class="uppercase">Struggle to</span>
+                                        <br>
+                                        <span class="font-serif-italic">keep up with the trends</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div class=" static">
+                                <img class="painpoints-img " src="../assets/img/nope.png" alt="Limited Resources">
+                                <div class="absolute bottom-10 p-10">
+                                    <p class="painpoints-title "><span class="uppercase">Deal with</span>
+                                        <br>
+                                        <span class="font-serif-italic">unhappy clients</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </SplideSlide>
                     </SplideTrack>
+
                 </div>
             </Splide>
         </div>
@@ -42,10 +87,11 @@ export default {
 
         const options = {
             type: 'loop',
-            gap: '1.5rem',
+            gap: '1rem',
             autoplay: true,
             arrows: false,
             width: 'fit-content',
+            padding: '3rem',
             perPage: 3,
             breakpoints: {
                 767: {

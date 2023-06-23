@@ -48,7 +48,7 @@
   }
 
   .hamburger {
-    @apply block cursor-pointer transition duration-300 md:hidden;
+    @apply block cursor-pointer transition duration-300 lg:hidden;
   }
 
   .bar {
@@ -95,7 +95,7 @@
     @apply bg-primary-accent !text-black py-2 px-5 rounded-full text-center !mx-0 md:!ml-10;
   }
   .scroll-text {
-    @apply uppercase text-8xl whitespace-nowrap font-sans-black text-[#1A154C] mt-10 md:text-9xl lg:text-[200px];
+    @apply uppercase text-8xl whitespace-nowrap font-sans-black text-[#1A154C]  md:text-9xl lg:text-[200px] 2xl:text-[250px];
   }
   .scroll-text,
   .strap,
@@ -123,16 +123,16 @@
     }
   }
   .heading-text {
-    @apply text-white text-5xl md:text-7xl md:w-10/12 lg:w-3/4 2xl:text-9xl 2xl:w-7/12;
+    @apply text-white text-5xl md:text-7xl md:w-10/12 lg:w-3/4 2xl:text-9xl 2xl:w-8/12;
   }
   .heading-text span {
     @apply font-serif-italic;
   }
   .subheading {
-    @apply my-5 uppercase text-sm md:text-base md:w-1/3 md:ml-auto 2xl:text-xl 2xl:w-1/4 2xl:mr-20;
+    @apply my-5 uppercase text-sm md:text-base md:w-1/2 md:ml-auto lg:w-1/3 2xl:text-2xl 2xl:w-1/3 2xl:mt-10 2xl:mr-20;
   }
   .btn-primary {
-    @apply bg-primary-accent rounded-full py-2 px-10 text-black uppercase md:text-2xl;
+    @apply bg-primary-accent rounded-full py-3 px-10 text-black uppercase md:text-4xl hover:bg-white hover:-translate-y-2 hover:shadow-md hover:transition-all;
   }
   .strap {
     @apply uppercase text-4xl whitespace-nowrap font-sans font-bold  mt-20 flex text-primary-accent bg-black p-1 space-x-5 items-center 2xl:text-7xl;
@@ -174,7 +174,7 @@
     @apply py-10 md:py-20;
   }
   .problem-img-bg {
-    @apply flex items-end h-[500px] w-full md:h-[600px] lg:h-[500px] xl:h-[600px] 2xl:h-[800px];
+    @apply flex items-end h-[500px] w-full md:h-[600px] lg:h-[500px] xl:h-[600px];
   }
   .problem-title {
     @apply leading-none text-2xl lg:text-3xl 2xl:text-5xl;
@@ -201,10 +201,10 @@
     @apply uppercase text-center text-2xl mt-4 md:w-1/2 mx-auto lg:w-auto;
   }
   .benefits-icon {
-    @apply w-3/4 mx-auto md:w-1/2;
+    @apply w-3/4 mx-auto md:w-1/3 lg:w-1/2;
   }
   .benefits-icon.bell {
-    @apply w-11/12;
+    @apply w-11/12 md:w-1/2 lg:w-11/12;
   }
   .benefits-testimonial {
     @apply mx-3 my-10 light-purple rounded-3xl px-5 py-20 text-center text-white md:px-20 md:mx-6 2xl:mx-16 lg:mb-20 2xl:px-40 2xl:mb-40;
@@ -226,7 +226,7 @@
     @apply text-center text-5xl my-10;
   }
   .testimonials {
-    @apply mx-4 border-4 rounded-3xl p-10;
+    @apply mx-4 border-4 rounded-3xl p-10 h-full;
   }
   .testimonials .star {
     @apply w-5 inline-block mr-1;
@@ -314,7 +314,7 @@
     @apply text-black bg-white rounded-3xl px-5 py-20;
   }
   .match-container .title {
-    @apply text-5xl text-center px-5 md:w-1/2 md:mx-auto lg:text-6xl 2xl:w-1/3 2xl:text-7xl;
+    @apply text-5xl text-center px-5 md:w-1/2 md:mx-auto lg:text-6xl 2xl:w-1/3 2xl:px-0 2xl:text-7xl;
   }
   .match-container .subtitle {
     @apply uppercase text-center mt-6 mb-10 lg:text-2xl;
@@ -336,6 +336,15 @@
   }
 }
 @media (min-width: 768px) {
+  .reel-container {
+    @apply rounded-full;
+  }
+
+  .social-reel {
+    @apply p-10;
+  }
+}
+@media (min-width: 1024px) {
   .nav-menu {
     position: static;
     display: flex;
@@ -345,20 +354,16 @@
     align-items: center;
   }
   .nav-menu {
-    @apply space-y-0 py-0 space-x-10 ml-auto;
+    @apply space-y-0 py-0 space-x-5 ml-auto;
   }
   .nav-menu .nav-link {
-    @apply text-base;
-  }
-  .reel-container {
-    @apply rounded-full;
-  }
-
-  .social-reel {
-    @apply p-10;
+    @apply text-base xl:text-2xl;
   }
 }
 @media (min-width: 1920px) {
+  .heading-text {
+    @apply text-[10rem];
+  }
   .social-reel {
     @apply p-40;
   }

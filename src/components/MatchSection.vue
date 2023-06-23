@@ -42,7 +42,8 @@
                 <p class="underline">tanooshi.studio@gmail.com</p>
             </div>
 
-            <div class="arrow"><img class="md:h-[50px] xl:h-[75px] 2xl:h-[100px]" src="../assets/img/arrow.png" alt="">
+            <div class="arrow cursor-pointer" @click="goTo('home')"><img class="md:h-[50px] xl:h-[75px] 2xl:h-[100px]"
+                    src="../assets/img/arrow.svg" alt="">
             </div>
 
         </div>
@@ -61,3 +62,12 @@
 
     </div>
 </template>
+<script>
+export default {
+    methods: {
+        goTo(el) {
+            this.$emit("scrollToElement", el)
+        }
+    }
+}
+</script>

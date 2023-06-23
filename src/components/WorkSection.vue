@@ -18,7 +18,10 @@
             </div>
 
         </div>
-        <div class="text-center py-20"><button class="text-btn">See More Works</button></div>
+        <div class="flex justify-center"><button class="secondary-button">
+                See our works
+            </button></div>
+
 
     </div>
 </template>
