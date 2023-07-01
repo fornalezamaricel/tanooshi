@@ -5,23 +5,23 @@
     </RouterLink>
     <ul class="nav-menu" :class="showMenu ? 'active' : ''">
       <li class="nav-link " v-on:click="toggleMenu()">
-        <a class="smooth-scroll" href="/about">About</a>
+        <a class="smooth-scroll" href="/tanooshi/about">About</a>
 
       </li>
       <li class="nav-link " v-on:click="toggleMenu()">
-        <a class="smooth-scroll" href="/#why-us">Why Us</a>
+        <a class="smooth-scroll" href="/tanooshi/#why-us">Why Us</a>
 
       </li>
       <li class="nav-link " v-on:click="toggleMenu()">
-        <a href="/#works">Works</a>
+        <a href="/tanooshi/#works">Works</a>
 
       </li>
       <li class="nav-link " v-on:click="toggleMenu()">
-        <a href="/#contact">Contact</a>
+        <a href="/tanooshi/#contact">Contact</a>
 
       </li>
       <li class="nav-link btn-pill  hover:bg-white hover:italic" v-on:click="toggleMenu()">
-        <a href="/lets-work">Let's Work</a>
+        <a href="/tanooshi/lets-work">Let's Work</a>
 
       </li>
     </ul>
