@@ -1,5 +1,4 @@
 <script setup>
-import TopNav from "../components/TopNav.vue";
 
 import HeroSection from '../components/HeroSection.vue';
 import SocialProof from '../components/SocialProof.vue';
@@ -15,23 +14,18 @@ import FooterSection from '../components/FooterSection.vue';
 </script>
 <template>
   <div>
-    <header class="sticky top-0 z-[9000]">
-      <div class="absolute w-full  ">
-        <TopNav class="" @scrollToElement="scrollToElement" />
 
-      </div>
-    </header>
-    <HeroSection ref="home" />
+    <HeroSection id="/" ref="home" />
     <SocialProof />
     <ProblemSection />
-    <BenefitsSection ref="why-us" />
+    <BenefitsSection id="why-us" v-observe-visibility="visibilityChanged" />
     <TestimonialSection />
-    <WorkSection ref="works" />
+    <WorkSection id="works" />
     <PainPoints />
     <SolutionSection />
     <BrandsSection />
-    <MatchSection @scrollToElement="scrollToElement" />
-    <FooterSection ref="contact" />
+    <MatchSection />
+    <FooterSection @scrollToElement="scrollToElement" id="contact" />
 
 
   </div>
@@ -41,7 +35,14 @@ export default {
   methods: {
     scrollToElement(el) {
       this.$refs[el].$el.scrollIntoView({ behavior: "smooth" })
-    }
+    },
+    goTo(el) {
+      this.$emit("scrollToElement", el)
+    },
+    visibilityChanged() {
+      console.log('hello')
+
+    },
   }
 }
 </script>

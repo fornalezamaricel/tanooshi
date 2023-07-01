@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   @font-face {
     font-family: "Power Grotesk";
     src: url(../fonts/PowerGrotesk-Regular.ttf) format(truetype);
@@ -73,7 +76,7 @@
     right: 0;
   }
   .nav-menu .nav-link {
-    @apply text-white text-5xl mx-10;
+    @apply text-white text-5xl px-5 lg:px-3;
   }
   .hamburger.active .bar1 {
     -webkit-transform: rotate(-45deg) translate(-5px, 5px);
@@ -337,6 +340,133 @@
   .social-media {
     @apply flex justify-around text-white pb-5 lg:text-xl 2xl:text-4xl;
   }
+  .calendly-inline-widget {
+    @apply relative z-50;
+  }
+  ._cUP1np9gMvFQrcPftuf.xahN8AEzyAvQtVj17TPv {
+    @apply mt-0 mb-0;
+  }
+  .about-h2 {
+    @apply text-white text-4xl mb-14 font-serif text-center lg:w-9/12 mx-auto xl:text-6xl xl:w-11/12 2xl:text-7xl;
+  }
+  .about-numbers {
+    @apply grid grid-cols-3 py-10 text-white lg:py-16;
+  }
+  .about-numbers .count {
+    @apply text-light-purple text-5xl  text-center md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl;
+  }
+  .about-numbers .label {
+    @apply text-center uppercase text-[0.6rem] md:text-xs lg:text-sm xl:text-base 2xl:text-xl;
+  }
+  .parallax-wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+  }
+  .parallax-group {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    transform-style: preserve-3d;
+  }
+
+  .parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 1s;
+  }
+  .envelop {
+    transform: translateZ(-300px) scale(2) translateX(-10%) translateY(40%);
+    z-index: 1;
+  }
+  .phone {
+    transform: translateZ(-500px) scale(1.5) translateX(10%);
+
+    z-index: 2;
+    display: none;
+  }
+  .laptop {
+    transform: translateZ(-200px) scale(2) translateX(20%) translateY(25%);
+
+    z-index: 3;
+  }
+  .card-pen {
+    transform: translateZ(-100px) scale(0.7) translateX(-68%) translateY(-20%);
+    z-index: 4;
+  }
+  .card {
+    transform: translateZ(-200px) scale(1.1) translateX(10%);
+
+    z-index: 5;
+    display: none;
+  }
+  .brand {
+    transform: translateZ(-100px) scale(1.1) translateX(10%);
+
+    z-index: 6;
+    display: none;
+  }
+  .heading-text.about {
+    @apply text-center mx-auto text-8xl md:text-9xl lg:text-8xl xl:text-9xl;
+  }
+  .about-why {
+    @apply py-10 px-10 text-white text-center bg-black md:p-20;
+  }
+  .about-why > .heading {
+    @apply text-7xl font-serif-italic md:text-8xl 2xl:text-9xl;
+  }
+  .about-img {
+    @apply h-[500px] rounded-full w-full -mt-16 md:h-[400px] lg:w-8/12 mx-auto xl:w-1/2 2xl:h-[550px] 2xl:w-7/12;
+    background: url(../assets/img/problems/img-peter-parker-meme.png) no-repeat center bottom;
+    background-size: contain;
+    background-color: #eb459e;
+  }
+  .about-why .caption .heading {
+    @apply text-xl my-5 md:text-3xl md:w-10/12 mx-auto md:my-10 lg:w-7/12 xl:w-1/2 xl:text-4xl 2xl:text-5xl;
+  }
+  .about-why .caption .subcaption {
+    @apply text-[0.6rem] my-5 w-8/12 mx-auto md:text-xs md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:text-sm;
+  }
+  .about-ceo-section {
+    @apply bg-gradient-to-b from-black from-50% to-primary-accent to-50%;
+  }
+  .about-ceo-container {
+    @apply bg-light-purple rounded-3xl text-white;
+  }
+  .about-ceo {
+    @apply py-10 px-10 md:px-28 lg:px-40 2xl:py-20 2xl:px-52;
+  }
+  .q-mark svg {
+    @apply h-5 w-5 md:w-8 md:h-8 xl:w-10;
+  }
+  .quote p {
+    @apply text-4xl md:text-6xl xl:text-8xl 2xl:text-9xl;
+  }
+  .quote span {
+    @apply font-serif-italic;
+  }
+  .ceo-details {
+    @apply mt-10 md:grid md:grid-cols-2 md:gap-10 xl:mt-20 xl:w-10/12 mx-auto;
+  }
+  .ceo-details .details {
+    @apply mt-5 md:mt-0;
+  }
+  .ceo-details img {
+    @apply rounded-3xl lg:w-8/12 lg:ml-auto xl:w-7/12;
+  }
+  .ceo-details .name {
+    @apply text-5xl 2xl:text-6xl;
+  }
+  .ceo-details .position {
+    @apply uppercase text-sm mb-10 mt-3 2xl:text-lg;
+  }
+  .ceo-details .message {
+    @apply mb-5 2xl:text-2xl;
+  }
 }
 @media (min-width: 768px) {
   .reel-container {
@@ -345,6 +475,25 @@
 
   .social-reel {
     @apply p-10;
+  }
+
+  .parallax-group {
+    height: 100vh;
+  }
+  .envelop {
+    transform: translateZ(-300px) scale(1.5) translateX(-10%) translateY(41%);
+  }
+  .laptop {
+    transform: translateZ(-200px) scale(1.5) translateX(20%) translateY(20%);
+  }
+  .card-pen {
+    transform: translateZ(-100px) scale(1) translateX(-20%) translateY(7%);
+  }
+
+  .brand {
+    transform: translateZ(-10px) scale(0.7) translateX(80%) translateY(-21%);
+
+    display: block;
   }
 }
 @media (min-width: 1024px) {
@@ -361,6 +510,81 @@
   }
   .nav-menu .nav-link {
     @apply text-base xl:text-2xl;
+  }
+  .parallax-group {
+    height: 200vh;
+  }
+
+  .envelop {
+    transform: translateZ(-600px) scale(1.5) translateX(-10%) translateY(50%);
+    z-index: 1;
+  }
+  .phone {
+    transform: translateZ(-400px) scale(1.2) translateX(93%) translateY(28%);
+
+    z-index: 2;
+    display: block;
+  }
+  .laptop {
+    transform: translateZ(-500px) scale(1.4) translateX(10%) translateY(20%);
+
+    z-index: 3;
+  }
+  .card-pen {
+    transform: translateZ(-300px) scale(1) translateX(-15%) translateY(10%);
+    z-index: 4;
+  }
+  .card {
+    transform: translateZ(-200px) scale(0.9) translateX(50%) translateY(40%);
+
+    z-index: 5;
+    display: block;
+  }
+  .brand {
+    transform: translateZ(-200px) scale(0.8) translateX(90%) translateY(-10%);
+
+    z-index: 6;
+    display: block;
+  }
+}
+@media (min-width: 1280px) {
+  .envelop {
+    transform: translateZ(-600px) scale(1.8) translateX(-2%) translateY(38%);
+  }
+  .phone {
+    transform: translateZ(-400px) scale(1.4) translateX(90%) translateY(23%);
+  }
+  .laptop {
+    transform: translateZ(-500px) scale(1.8) translateX(20%) translateY(20%);
+  }
+  .card-pen {
+    transform: translateZ(-300px) scale(1.3) translateX(0%) translateY(10%);
+  }
+  .card {
+    transform: translateZ(-200px) scale(1.4) translateX(45%) translateY(29%);
+  }
+  .brand {
+    transform: translateZ(-200px) scale(1) translateX(85%) translateY(-5%);
+  }
+}
+@media (min-width: 1536px) {
+  .envelop {
+    transform: translateZ(-600px) scale(2.1) translateX(10%) translateY(39%);
+  }
+  .phone {
+    transform: translateZ(-400px) scale(1.7) translateX(82%) translateY(30%);
+  }
+  .laptop {
+    transform: translateZ(-500px) scale(2.1) translateX(25%) translateY(25%);
+  }
+  .card-pen {
+    transform: translateZ(-300px) scale(1.5) translateX(8%) translateY(18%);
+  }
+  .card {
+    transform: translateZ(-200px) scale(1.6) translateX(47%) translateY(31%);
+  }
+  .brand {
+    transform: translateZ(-200px) scale(1.2) translateX(79%) translateY(7%);
   }
 }
 @media (min-width: 1920px) {
@@ -380,6 +604,63 @@
     @apply text-9xl;
   }
   .caption-container .caption {
+    @apply text-4xl;
+  }
+  .envelop {
+    transform: translateZ(-600px) scale(2.3) translateX(17%) translateY(39%);
+  }
+  .phone {
+    transform: translateZ(-400px) scale(1.9) translateX(74%) translateY(32%);
+  }
+  .laptop {
+    transform: translateZ(-500px) scale(2.2) translateX(30%) translateY(27%);
+  }
+  .card-pen {
+    transform: translateZ(-300px) scale(1.6) translateX(16%) translateY(18%);
+  }
+  .card {
+    transform: translateZ(-200px) scale(1.6) translateX(47%) translateY(31%);
+  }
+  .brand {
+    transform: translateZ(-200px) scale(1.3) translateX(72%) translateY(10%);
+  }
+  .heading-text.about {
+    @apply text-[10rem];
+  }
+  .about-why > .heading {
+    @apply text-[10rem];
+  }
+  .about-img {
+    @apply h-[700px] -mt-24;
+  }
+  .about-why .caption .heading {
+    @apply text-[3.50rem];
+  }
+  .about-why .caption .subcaption {
+    @apply text-lg;
+  }
+  .about-ceo {
+    @apply px-72;
+  }
+  .ceo-details .name {
+    @apply text-7xl;
+  }
+  .ceo-details .position {
+    @apply text-2xl;
+  }
+  .ceo-details .message {
+    @apply text-3xl;
+  }
+  .about-h2 {
+    @apply w-10/12 text-8xl;
+  }
+  .about-numbers {
+    @apply w-10/12 mx-auto;
+  }
+  .about-numbers .count {
+    @apply text-[10rem];
+  }
+  .about-numbers .label {
     @apply text-4xl;
   }
 }

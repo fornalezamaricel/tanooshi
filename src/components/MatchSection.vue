@@ -30,44 +30,18 @@
 
             </div>
             <div class="text-center pt-20">
-                <button class="btn-primary py-4">Check if we are <span class="lowercase font-serif-italic">a good
-                        fit</span></button>
+                <button class="btn-primary   mx-auto flex gap-5 items-center ">
+                    <span><img class="rounded-full" src="../assets/img/image-rosiel-cay-tanooshi-founder.png"
+                            alt="Rosiel Cay | Tanooshi Founder " height='50px' width="50px"></span>
+                    <span> Book a <span class="font-serif-italic"> 15-min </span> call
+                    </span>
+                </button>
             </div>
 
         </div>
-        <div class="contacts">
-            <div>
-                <p>San Andres, Bicol, Philippines, 4810</p>
-                <p class="underline">+639 6205 56131</p>
-                <p class="underline">tanooshi.studio@gmail.com</p>
-            </div>
-
-            <div class="arrow cursor-pointer" @click="goTo('home')"><img class="md:h-[50px] xl:h-[75px] 2xl:h-[100px]"
-                    src="../assets/img/arrow.svg" alt="">
-            </div>
-
-        </div>
-        <div class="bg-black">
-            <div class="overflow-hidden bg-primary-color text-white py-5 rounded-b-3xl">
-                <div class="scrolling-text font-normal uppercase ">
-                    We build websites that are worth flexing.
-                    We build websites that are worth flexing.
-                </div>
-            </div>
-        </div>
-
 
 
 
 
     </div>
 </template>
-<script>
-export default {
-    methods: {
-        goTo(el) {
-            this.$emit("scrollToElement", el)
-        }
-    }
-}
-</script>

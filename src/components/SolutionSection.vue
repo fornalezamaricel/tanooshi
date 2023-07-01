@@ -13,8 +13,12 @@
                 <li>peace of mind</li>
             </ul>
             <div class="text-center py-20">
-                <button class="btn-primary py-4">Check if we are <span class="lowercase font-serif-italic">a good
-                        fit</span></button>
+                <button class="btn-primary py-4 flex items-center gap-5 ">
+                    <span><img class="rounded-full" src="../assets/img/image-rosiel-cay-tanooshi-founder.png"
+                            alt="Rosiel Cay | Tanooshi Founder " height='50px' width="50px"></span>
+                    <span>Check if we are <span class="lowercase font-serif-italic">a good
+                            fit</span></span>
+                </button>
             </div>
 
 

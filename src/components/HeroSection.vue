@@ -9,8 +9,12 @@
         We build websites that wow your clients, save you $$$, so you can scale
         effortlessly.
       </p>
-      <button class="btn-primary md:relative z-20  md:left-1/4 md:bottom-[-120px] lg:left-1/3 lg:bottom-[-150px] ">
-        Book a <span class="font-serif-italic"> 15-min </span> call
+      <button
+        class="btn-primary md:relative z-20  md:left-1/4 md:bottom-[-120px] lg:left-1/3 lg:bottom-[-150px] flex gap-5 items-center ">
+        <span><img class="rounded-full" src="../assets/img/image-rosiel-cay-tanooshi-founder.png"
+            alt="Rosiel Cay | Tanooshi Founder " height='50px' width="50px"></span>
+        <span> Book a <span class="font-serif-italic"> 15-min </span> call
+        </span>
       </button>
     </div>
     <div class=" mt-[-70px] ">
@@ -59,7 +63,7 @@
         </ul>
       </div>
       <img src="../assets/img/img-macbook-laptop.png"
-        class="relative md:mt-[-120px] lg:mt-[-180px]  lg:mx-auto 2xl:mt-[-200px]">
+        class=" relative md:mt-[-120px] lg:mt-[-180px]  lg:mx-auto 2xl:mt-[-200px] ">
     </div>
   </main>
 </template>
