@@ -25,9 +25,32 @@
                 <Splide :options="options" :has-track="false">
                     <div class="relative">
                         <SplideTrack>
-                            <SplideSlide v-for="social in Socials" :key="social">
-                                <img class="mx-auto md:h-[70px] 2xl:h-[100px]  " :src="`../src/assets/svg/${social.img}`"
-                                    :alt="social.name">
+
+                            <SplideSlide>
+                                <img class="mx-auto md:h-[70px] 2xl:h-[100px]  " src="../assets/svg/logo-abc.svg" alt="ABC">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img class="mx-auto md:h-[70px] 2xl:h-[100px]  " src="../assets/svg/logo-buzzfeed.svg"
+                                    alt="Buzzfeed">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img class="mx-auto md:h-[70px] 2xl:h-[100px]  " src="../assets/svg/logo-dji.svg" alt="DJI">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img class="mx-auto md:h-[70px] 2xl:h-[100px]  " src="../assets/svg/logo-forbes.svg"
+                                    alt="Forbes">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img class="mx-auto md:h-[70px] 2xl:h-[100px]  " src="../assets/svg/logo-fox-news.svg"
+                                    alt="Fox News">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img class="mx-auto md:h-[70px] 2xl:h-[100px]  " src="../assets/svg/logo-imdb.svg"
+                                    alt="IMDB">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img class="mx-auto md:h-[70px] 2xl:h-[100px]  " src="../assets/svg/logo-techcrunch.svg"
+                                    alt="Techcrunch">
                             </SplideSlide>
 
 
@@ -45,7 +68,7 @@
 <script>
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
-import Socials from '../assets/data/social.json'
+
 
 export default {
     components: {
@@ -79,11 +102,7 @@ export default {
         }
 
     },
-    data() {
-        return {
-            Socials
-        }
-    }
+
 }
 
 </script>
